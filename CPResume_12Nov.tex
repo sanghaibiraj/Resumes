@@ -1,0 +1,398 @@
+%-------------------------
+% Resume in Latex
+% Author : Biraj Sanghai
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-5pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-3mm}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\collegeItem}[1]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small } \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\texthash}{\#}
+\newcommand{\percent}{\%}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemiii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-15pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape Biraj Sanghai} \\ \vspace{1pt}
+    Bhagalpur, Bihar, India 813210 \\ \vspace{1pt}
+    \href{tel:918653376325}{\color{Blue} \raisebox{-0.2\height}\faPhone\
+    \underline {+91 8653376325}} ~ \href{mailto:sanghaibiraj@gmail.com}{\color{Blue} \raisebox{-0.2\height}\faEnvelope\  \underline{sanghaibiraj@gmail.com}} ~ 
+    \href{https://github.com/sanghaibiraj}{\color{Blue} \raisebox{-0.2\height}\faGithub\ \underline{github}} ~ 
+    \href{https://www.linkedin.com/in/biraj-sanghai-iiitbh}{\color{Blue} \raisebox{-0.2\height}\faLinkedin\ \underline{linkedin}}
+    \hspace{2pt}
+    \href{https://biraj-sanghai.vercel.app/}{\color{Blue} 
+    \raisebox{-0.2\height}\faGlobe\ \underline{Website}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------Summary-----------
+% \section{\textbf{Brief}}
+% \vspace{-5pt}
+%  \resumeItem{A \textbf{software developer intern} with keen interest in design, successfully delivered 6+ live projects with over 5000 users, solving real-world problems. Having a solid grasp of \textbf{data structures, algorithms} and \textbf{computer science fundamentals}.}
+% \vspace{-6pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Information Technology Bhagalpur}{Nov 2022 -- Jul 2026}
+      {Bachelor of Technology in Computer Science and Engineering}{CGPA: 8.96 (absolute)}
+  % \collegeItem{\textbf{Grade:} 8.96 (overall) (absolute grading)}
+  \resumeSubHeadingListEnd
+  \vspace{-16pt}
+  
+
+% %------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Algorithms
+%                 \item Operating System
+%                 \item Database Management
+%                 \item Artificial Intelligence
+%                 \item Computer Networking
+%                 \item Systems Design
+%                 \item Computer Architecture
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+% \vspace{-5pt}
+
+
+%-----------PROGRAMMING SKILLS-----------
+% \vspace{2pt}
+% \section{Skills}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Languages: }{C++, C\#, JavaScript, CSS, HTML, SQL} \\
+%      \vspace{3pt}
+%      \textbf{Tools \& Frameworks: }{ReactJS, NodeJS, Git, Github, Azure, Figma, ASP.NET Core} \\
+%      \vspace{3pt}
+%      \textbf{CS Fundamentals: }{Data structures, Algorithms, OOPs, DBMS, OS, RestAPI, Design Patterns}}} \\
+%  \end{itemize}
+%  \vspace{-16pt}
+
+%-----------Technical skills-----------------
+\section{\textbf{Technical Skills}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Javascript, HTML+CSS, Python. } 
+     \hspace{0.6cm}\textbf{Libraries }{: C++ STL, SFML, GSAP, daisyUI }\\ 
+     \textbf{Web Dev Tools}{: Nodejs, VScode, Git, Github } 
+     \hspace{1.5cm}\textbf{Frameworks}{: ReactJs, TailwindCSS } \\
+     \textbf{Relevent Coursework}{: Data Structures \& Algorithms, Operating Systems, Object Oriented Programming, Database Management System, Software Engineering. } \\ 
+     % \textbf{Areas of Interest}{: Competitive Programming, DSA, Web Design and Development, Cloud Security.} \\
+     % \textbf{Soft Skills}{: Self-learning, Presentation, Adaptability} \\
+    }}
+ \end{itemize}
+ \vspace{-20pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+    \vspace{4pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {{IIIT Bhagalpur} $|$ 
+      \emph{\color{Blue} \href{https://drive.google.com/}\faAward{}}} {May 2024 -- Jul 2024} 
+      {Software Development | Product Design, Web Development, Testing}{Bhagalpur, Bihar}
+       \vspace{-8pt}
+      \resumeItemListStart
+        \item \textbf{Spearheaded} the development and deployment of the official websites for the Technical Board and College Hostel Affairs Board at IIIT Bhagalpur achieving a \textbf{50\% increase} in user engagement.\
+        \vspace{-5pt}
+        \item Resulted in a \textbf{30\% boost in club efficiency} and a \textbf{20\% reduction in administrative workload}.
+
+
+    \vspace{12pt}
+    \resumeItemListEnd
+    \resumeSubheading
+      {{OPCODE (Open-Source Spring Fest)} $|$ 
+      \emph{\color{Blue} \href{https://drive.google.com/file/d/1bFdeC9lv0cpDgV0IQ5HacyyKJtViQ6rH/view?usp=sharing}\faAward{}}} {Mar 2024 -- Apr 2024} 
+      {Project Maintainer}{IIIT Bhagalpur, Bihar}
+       \vspace{-8pt}
+      \resumeItemListStart
+        \item \textbf{Led} the management of the \textbf{'Slithercraft'} and \textbf{'Codecrack'} projects during the \textbf{Opcode Open Source Fest} ensuring \textbf{100\% adherence to project timelines}.
+        \vspace{-5pt}
+        \item Addressed \textbf{60+ issues} and managed \textbf{150+ pull requests} within the Codecrack project.
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+%-----------Achievements-----------------
+\section{\textbf{Achievements}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+% ICPC Achievement
+    \resumePOR{The 2023 ICPC Asia Amritapuri Doublesite Regional Contest} 
+    {} 
+    {Nov 2023 -- Jan 2024}
+    \resumeItemListStart
+        \item Secured qualification for the ICPC regional round with a commendable top 650 rank in the preliminary round.
+        \vspace{-5pt}
+        \item Achieved an impressive 135th position among the top 250 selected teams in the regional round.
+    \resumeItemListEnd
+
+% Codeforces Achievement
+\resumePOR{\textbf{Codeforces (Expert, Highest Rating 1643)}} 
+    {} 
+    {\href{https://codeforces.com/profile/biraj01}{biraj01}}
+    \resumeItemListStart
+        \item Competed in upwards of \textbf{60 contests} and resolved \textbf{400+ problems}.
+        \vspace{-5pt}
+        \item Secured a position of \textbf{602 out of 63,837} participants (\textbf{top 1\%}) in Codeforces Round 920 (Div. 3).
+
+    \resumeItemListEnd
+
+% CodeChef Achievement
+\resumePOR{\textbf{CodeChef (5-star, Highest Rating 2035)}} 
+    {} 
+    {\href{https://www.codechef.com/users/biraj01}{biraj01}}
+    \resumeItemListStart
+        \item Engaged in over \textbf{40 contests} and tackled more than \textbf{450 problems}.
+        \vspace{-5pt}
+        \item Achieved a rank of \textbf{44 out of 2,244} competitors (\textbf{top 2\%}) in the CodeChef Starters 123 Division 2 Contest.
+    \resumeItemListEnd
+
+% LeetCode Achievement
+\resumePOR{\textbf{LeetCode (Knight, Top 3\%, Maximum Rating 1982)}} 
+    {} 
+    {\href{https://leetcode.com/sanghaibiraj/}{sanghaibiraj}}
+    \resumeItemListStart
+        \item Devised and implemented solutions for over \textbf{200 challenges} of varying complexities.
+        \vspace{-5pt}
+        \item Secured a best contest performance by ranking \textbf{771 out of 36,727} participants (\textbf{top 2.1\%}).
+    \resumeItemListEnd
+
+% AtCoder Achievement
+\resumePOR{\textbf{AtCoder (Green, 5Kyu, Rating 1056)}} 
+    {} 
+    {\href{https://atcoder.jp/users/biraj01}{biraj01}}
+    % \resumeItemListStart
+    % \item {Participated in 11 rated contests.}
+    % \resumeItemListEnd
+
+% CODEYUDH 1.0 Contest
+\resumePOR{\textbf{Codeyudh 1.0 Contest}} 
+    {} 
+    {Apr 2024} 
+    \resumeItemListStart
+    \item Earned \textbf{champion} status (rank 1) by winning four successive head-to-head CP matchups.
+    \vspace{-5pt}
+    \item Qualified from an initial round with 150+ participants to the top 16.
+    \resumeItemListEnd
+% TMLE Busters CP Contest
+% \resumePOR{\textbf{TMLE Busters CP Contest (Rank 1)}} 
+%     {} 
+%     {Nov 2023} 
+    % \resumeItemListStart
+    % \item {Placed \textbf{Rank 1} in the TMLE Busters CP contest out of 100+ participants organized by PyC Coding club of IIIT Bhagalpur.}
+    % \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-4mm}
+
+ 
+
+\section{\textbf{Positions of Responsibility}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Club Lead} % Position
+    { PyC (coding club of IIIT Bhagalpur)} %Club,Event
+    {Jan 2024 -- Present} %Tenure Period \\
+    \resumeItemListStart
+        \item Mentored \textbf{40+ students} in \textbf{Competitive Programming} and \textbf{Data Structures \& Algorithms}.
+        \vspace{-5pt}
+        \item Orchestrated \textbf{5 high-impact contests}, each attracting over \textbf{120 participants}, with one exceeding \textbf{200}.
+        \vspace{-5pt}
+        \item Conducted sessions and \textbf{post-competition doubt-solving}, directly benefiting \textbf{150+ students} per event.
+
+    \resumeItemListEnd
+\vspace{-0.6mm}
+\resumeSubHeadingListStart
+\resumePOR{CP / DSA Lead} % Position
+    { (AlgoZenith Chapter, IIIT Bhagalpur)} %Club,Event
+    {Aug 2024 -- Present} %Tenure Period \\
+
+% \vspace{-10pt}
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-8pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Edupreneurs} $|$ \emph{ReactJS, NodeJS, TailwindCSS, MongoDB} $|$ \emph{\color{Blue} \href{}\faGlobe{} \href{https://github.com/Jagpreet153/Edupreneurs}\faGithub{}}}{Frontend Developer and Project Manager}
+          \vspace{-8pt}
+          \resumeItemListStart
+            \item \textbf{Led end-to-end development of the Edupreneurs website,} enhancing user experience for over \textbf{2,000 students, parents, and 150 educators, also streamlining administrative processes}.
+            \vspace{-5pt}
+        \item \textbf{Optimized site performance} by reducing load times by \textbf{40\%} and Increased user satisfaction by \textbf{30\%} .
+        \resumeItemListEnd
+        \vspace{-10pt}
+    \resumeSubHeadingListEnd
+    \vspace{4pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{InstantPay: Payment Gateway} $|$ \emph{HTML, TailwindCSS} $|$ \emph{\color{Blue} \href{https://instanttpay.netlify.app/}\faGlobe{} \href{https://github.com/sanghaibiraj/Instantpay}\faGithub{}}}{Frontend on an Online Payment Gateway}
+          \vspace{-12pt}
+\vspace{-13pt}
+
+%-----------INVOLVEMENT---------------
+% \vspace{2pt}
+% \section{Achievements}
+%     \resumeSubHeadingListStart
+%         % \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+%             \resumeItemListStart
+%                 \resumeItem{\textbf{Won Smart India Internal Hackathon:} Led team to top 5 out of 25+ teams, built a platform for entrepreneurs.}
+%                 \vspace{3pt}
+%                 \resumeItem{\textbf{Solved 750+ Coding Questions:} Showed proficiency by solving over 450+ questions on {{\href{https://leetcode.com/rpremofficial/}{\color{Blue} \underline{\textbf{LeetCode}}}}}, 200+ on {{\href{https://codeforces.com/profile/kr.prem}{\color{Blue} \underline{\textbf{Codeforces}}}}}
+%                 and rest on others, Achieved global ranking 2918 on a Leetcode contest.}
+%                 \vspace{3pt}
+%                 \resumeItem{\textbf{Reached Level 10:} on {{\href{https://learn.microsoft.com/en-us/users/rpremofficial/}{\color{Blue} \underline{\textbf{Microsoft Learn}}}}} with 14 trophies and 104 badges, actively learning \& exploring new things.}
+%                 \vspace{3pt}
+%                 \resumeItem{\textbf{Achieved 3 Star on {{\href{https://www.codechef.com/users/rpremofficial}{\color{Blue} \underline{CodeChef:}}}}} with best global rank 157 and total rating of 1665 points.}
+%             \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+%     \vspace{-13pt}
+
+
+% \section{Extracurricular}
+%     \resumeSubHeadingListStart
+%         % \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+%             \resumeItemListStart
+%                 % \resumeItem{\textbf{Led design/branding team and Managed business/tech events:} in Enyugma, techno-cultural fest 2022.}
+                
+%                 \resumeItem{\textbf{Selected as Training \& Placement Coordinator:} Hosted 30+ events on technology, hiring and careers, connecting 1200+ students/alumni with companies and recruiters.}
+%                 \vspace{3pt}
+%                 \resumeItem{\textbf{Elected as Head of Design Team:} Led the design team of the college, honing UI/UX skills and improving 25+ websites and apps. Transformed the college fest representations to flagship events.}
+%                 \vspace{3pt}
+%                 \resumeItem{\textbf{Coordinated the entrepreneurship club:} led \textbf{30+ student entrepreneurs} and learned developing \textbf{user-focused products and solutions}. Connected with over 1000 people across country.}
+%             \resumeItemListEnd
+        
+%     \resumeSubHeadingListEnd
+
+
+\end{document}
