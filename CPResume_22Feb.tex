@@ -1,0 +1,291 @@
+%-------------------------
+% Resume in Latex
+% Author : Biraj Sanghai
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-5pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \small{#3} 
+    \end{tabular*}
+    \vspace{-3mm}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\collegeItem}[1]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small } \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\texthash}{\#}
+\newcommand{\percent}{\%}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemiii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-15pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape Biraj Sanghai} \\ \vspace{1pt}
+    Malda, West Bengal, India 732101 \\ \vspace{1pt}
+    \href{tel:918653376325}{\color{Blue} \raisebox{-0.2\height}\faPhone\
+    \underline {+91 8653376325}} ~ \href{mailto:sanghaibiraj@gmail.com}{\color{Blue} \raisebox{-0.2\height}\faEnvelope\  \underline{sanghaibiraj@gmail.com}} ~ 
+    \href{https://github.com/sanghaibiraj}{\color{Blue} \raisebox{-0.2\height}\faGithub\ \underline{Github}} ~ 
+    \href{https://www.linkedin.com/in/biraj-sanghai-iiitbh}{\color{Blue} \raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}}
+    \hspace{2pt}
+    \href{https://biraj-sanghai.vercel.app/}{\color{Blue} 
+    \raisebox{-0.2\height}\faGlobe\ \underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------Summary-----------
+% \section{\textbf{Brief}}
+% \vspace{-5pt}
+%  \resumeItem{A \textbf{software developer intern} with keen interest in design, successfully delivered 6+ live projects with over 5000 users, solving real-world problems. Having a solid grasp of \textbf{data structures, algorithms} and \textbf{computer science fundamentals}.}
+% \vspace{-6pt}
+\section{Education}
+  \resumeSubHeadingListStart
+  \vspace{4pt}
+    \resumeSubheading
+      {Indian Institute of Information Technology, Bhagalpur}{Nov 2022 -- Jul 2026}
+      {Bachelor of Technology in Computer Science Engineering}{CGPA: 8.97 (absolute)}
+  % \collegeItem{\textbf{Grade:} 8.96 (overall) (absolute grading)}
+  \resumeSubHeadingListEnd
+  \vspace{-12pt}
+
+%-----------Technical skills-----------------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.00in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, JavaScript, TypeScript, HTML/CSS, Python, SQL. } \\ 
+     \textbf{Frameworks}{: React, Vite, Next.js, TailwindCSS, Express.js, Shadcn UI.} \\
+     \textbf{Web Development Tools}{: Node.js, MongoDB, REST APIs, Git, Github, Linux, Firebase, Postman, Compass, Docker. } \\
+     % \hspace{2.0cm}\textbf{Frameworks}{: ReactJs, TailwindCSS } \\
+     \textbf{Relevant Coursework}{: Data Structures \& Algorithms, Operating Systems, Object Oriented Programming, Database Management Systems, Software Engineering, Computer Networks. } \\ 
+     % \textbf{Areas of Interest}{: Competitive Programming, DSA, Web Design and Development, Cloud Security.} \\
+     % \textbf{Soft Skills}{: Self-learning, Presentation, Adaptability} \\
+    }}
+ \end{itemize}
+ 
+ \vspace{-16pt}
+
+ %-----------EXPERIENCE-----------------
+\section{Experience}
+  \vspace{-4pt}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      { \textbf{Oddmind Innovations} $|$ Full Stack Developer Intern}{Jan 2024 - Present}
+      \resumeItemListStart
+        \item {Designed and implemented key microservices (User, Audio, and Hiring) for Zariya AI handling 1000+ users, parsing 2500+ resumes, leveraging PostgreSQL (Prisma ORM) as database.}
+        \vspace{-4pt}
+        \item {Built 10+ APIs improving job recommendation accuracy by 30\% and reducing audio processing time by 40\%.}
+        \vspace{-4pt}
+        \item {Developed the frontend using Next.js, TailwindCSS, and ShadCN UI, ensuring a seamless user experience.}
+        \vspace{-4pt}
+        \item {Integrated Firebase authentication and leveraged Gemini Generative AI and Vertex AI API for audio parsing, deployed services using Docker and optimized media processing with FFmpeg cutting processing costs by 25\%.}
+    \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+\vspace{-6pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-4pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Readscape} $|$ React Vite, Node.js, TailwindCSS, MongoDB $|$ \color{Blue} \href{https://readscape-sigma.vercel.app/}\faGlobe{} \href{https://github.com/sanghaibiraj/readscape}\faGithub{}}{Nov 2024 - Dec 2024}
+          \vspace{-16pt}
+          \resumeItemListStart
+            \item Devised a robust full-stack MERN Bookstore application that encompassed cart management and user authentication. Implemented features that improved user retention rates by 30\%. 
+            \vspace{-4pt}
+            \item Incorporated Firebase Authentication and optimized frontend performance using Vite, achieving a 40\% reduction in load times, and increasing user satisfaction by 25\%.
+          \resumeItemListEnd
+        \vspace{-10pt}
+
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Deribit Test Trading Management System} $|$ C++, Boost.Beast, libcurl, nlohmann/json $|$ \color{Blue} \href{https://github.com/sanghaibiraj/DeribitTest_TradeManagementSystem}\faGithub{}}{Oct 2024 - Nov 2024}
+      \vspace{-8pt}
+      \resumeItemListStart
+        \item Engineered a robust C++ trading system, enabling user authentication, real-time market data streaming, and comprehensive order lifecycle management (place, modify, cancel orders). 
+        \vspace{-4pt}
+        \item Integrated WebSocket and HTTP APIs for low-latency market data streaming and secure trade execution, achieving an average order placement latency of 40 ms.
+      \resumeItemListEnd
+    \vspace{-10pt}
+\resumeSubHeadingListEnd
+
+\vspace{8pt}
+
+\section{Positions of Responsibility}
+\vspace{-8pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Club Lead $|$ PyC } $|$ Coding Club of IIIT Bhagalpur}{Jan 2024 -- Jan 2025}
+            \vspace{-10pt}
+            \resumeItemListStart
+                \item Coached 40+ students in Competitive Programming and Data Structures \& Algorithms, improving rankings, and organized 5 contests, including one with 200+ participants.
+            \resumeItemListEnd
+        % \vspace{4pt}
+        \resumeProjectHeading
+            {\textbf{CP/DSA Lead $|$ AlgoZenith Chapter} $|$ IIIT Bhagalpur}{Aug 2024 -- Present}
+            \vspace{-10pt}
+            \resumeItemListStart
+                \item Formulated and Directed "Algoquest", a 30-day DSA challenge, engaging over 20 students and significantly enhancing their DSA skills through consistency and hands-on practice.
+            \resumeItemListEnd
+        % \vspace{4pt}
+        \resumeProjectHeading
+            {\textbf{Project Maintainer $|$ OPCODE} (Open-Source Spring Fest) $|$ \color{Blue} \href{https://drive.google.com/file/d/1bFdeC9lv0cpDgV0IQ5HacyyKJtViQ6rH/view?usp=sharing}\faAward{} }{Mar 2024 -- Apr 2024}
+            \vspace{-10pt}
+            \resumeItemListStart
+                \item Led the management of 'Slithercraft' and 'Codecrack' projects, ensuring 100\% adherence to project timelines.
+                \vspace{-4pt}
+                \item Addressed 60+ issues and managed 150+ pull requests within the Codecrack project.
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\vspace{-2pt}
+%-----------Achievements-----------------
+\section{Achievements}
+\vspace{-8pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{The 2023 ICPC Asia Amritapuri Doublesite Regional Contest} $|$ \color{Blue} \href{https://drive.google.com/file/d/1tTQS7SLYutT6joPI9-J78EyERAZbDewo/view?usp=sharing}\faAward{} } 
+            {Nov 2023 -- Jan 2024}
+        \vspace{-24pt}
+        \resumeProjectHeading
+            {\textbf{Codeyudh 1.0 Contest} $|$ Champion $|$ PyC $|$ \color{Blue} \href{https://drive.google.com/file/d/185x27Rri2LVyiaOLugosbEesvo6sZnfe/view?usp=sharing}\faAward{} } 
+            {Apr 2024} 
+    \resumeSubHeadingListEnd
+    \vspace{-4mm}
+
+\section{Programming Milestones}
+\vspace{-8pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{LeetCode $|$ Guardian $|$ 2157} $|$ 29+ contests $|$ 420+ problems $|$ \color{Blue}\href{https://leetcode.com/sanghaibiraj/}{sanghaibiraj}}
+            {Jan 2024 - Present}
+        \vspace{-24pt}
+        \resumeProjectHeading  
+            {\textbf{Codeforces $|$ Expert $|$ 1643} $|$ 60+ contests $|$ 480+ problems $|$ \color{Blue}\href{https://codeforces.com/profile/biraj01}{biraj01}}
+            {Feb 2023 - Present}
+        \vspace{-24pt}
+        \resumeProjectHeading  
+            {\textbf{CodeChef $|$ 5-star $|$ 2035} $|$ 42+ contests $|$ 460+ problems $|$ \color{Blue}\href{https://www.codechef.com/users/biraj01}{biraj01}}
+            {Dec 2022 - Present}
+    \resumeSubHeadingListEnd
+    \vspace{-4mm}
+    
+
+\end{document}
